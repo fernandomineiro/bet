@@ -1,0 +1,114 @@
+.container {
+            max-width: 900px;
+         
+            /* AQUI está a mudança principal para o fundo transparente do conteúdo */
+            background: rgba(255, 255, 255, 0); /* Fundo branco totalmente transparente */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: none; /* Remove a sombra para manter a transparência visual */
+        }
+
+        h1 {
+            color: #10b981;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #10b981;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #10b981;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+         strong {
+            color: #10b981!important; /* Força a cor preta opaca para o texto em negrito */
+            font-weight: 600; 
+            font-size: 16pt;
+            margin-right: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* As caixas de observação ainda terão um fundo para serem legíveis */
+        .important-note {
+            background-color: #fff3cd; /* Fundo levemente amarelado */
+            border-left: 5px solid #ffeeba;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 4px;
+            color: #856404;
+        }
+
+        .important-note p {
+            margin: 0;
+        }
+
+        .contact-info {
+            background-color: #e9f7ef; /* Fundo levemente esverdeado */
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 4px;
+            color: #155724;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade básica */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
