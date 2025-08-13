@@ -1,3 +1,39 @@
+.video-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem; /* Espaço entre as divs */
+            flex-wrap: wrap; /* Permite quebras de linha em telas pequenas */
+        }
+
+        .video-wrapper {
+            flex: 1 1 300px; /* Faz a div crescer/encolher e define um tamanho base */
+            position: relative;
+         padding-bottom: 82.85%; 
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .video-wrapper video {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Estilos para telas menores, para os vídeos ficarem em coluna */
+        @media (max-width: 768px) {
+            .video-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video-wrapper {
+                width: 100%;
+                max-width: 600px;
+               padding-bottom: 42.85%;
+            }
+        }
 .container {
             max-width: 900px;
          
@@ -112,3 +148,6 @@
                 font-size: 1.5em;
             }
         }
+
+
+        
